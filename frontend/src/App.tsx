@@ -3,8 +3,10 @@ import Footer from "components/Footer";
 import DataTable from "components/DataTable";
 import BarChart from "components/BarChart";
 import DonutChart from "components/DonutChart";
+import ReactGA from 'react-ga';
 
 function App() {
+  ReactGA.initialize("G-14MQ1M8WEK");
   return (
     <>
       <NavBar />
