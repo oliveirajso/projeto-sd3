@@ -32,7 +32,6 @@ const Dashbord = () => {
       </div>
       <Footer />
     </>
-  )
-
-}
+  );
+};
 export default Dashbord;
