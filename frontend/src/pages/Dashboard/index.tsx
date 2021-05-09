@@ -4,7 +4,7 @@ import DonutChart from "components/DonutChart";
 import Footer from "components/Footer";
 import NavBar from "components/Navbar";
 
-const Dashbord = () => {
+const Dashboard = () => {
   return (
     <>
       <NavBar />
@@ -34,4 +34,4 @@ const Dashbord = () => {
     </>
   );
 };
-export default Dashbord;
+export default Dashboard;

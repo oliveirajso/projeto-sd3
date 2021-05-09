@@ -1,22 +1,20 @@
 import axios from "axios";
-import React from "react";
-import { SalePage } from "types/sale";
-
+import { useEffect, useState } from "react";
 import { formatLocalDate } from "utils/format";
 import { BASE_URL } from "utils/requests";
-
+import { SalePage } from "types/sale";
 const DataTable = () => {
-
-  const [page, setPage] = React.useState<SalePage>({
+  const [page, setPage] = useState<SalePage>({
     first: true,
     last: true,
     number: 0,
     totalElements: 0,
-    totalPages: 0
+    totalPages: 0,
   });
 
-  React.useEffect(() => {
-    axios.get(`${BASE_URL}/sales?page=1&size=10&sort=date,desc`)
+
+  useEffect(() => {
+    axios.get(`${BASE_URL}/sales?page=0&size=10&sort=date,desc`)
       .then(response => {
         setPage(response.data);
       });

@@ -1,4 +1,4 @@
-import Dashbord from "pages/Dashboard";
+import Dashboard from "pages/Dashboard";
 import Home from "pages/Home"
 import { BrowserRouter, Route, Switch } from "react-router-dom"
 
@@ -10,7 +10,7 @@ const Routes = () => {
                 <Home/>
             </Route>
             <Route path="/dashboard">
-                <Dashbord/>
+                <Dashboard/>
             </Route>
             </Switch>        
         </BrowserRouter>
